@@ -13,6 +13,7 @@ set(SRC_FILES
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}
 	${LUA_INCLUDE_DIR}
+    ${CMAKE_SOURCE_DIR}/src
     ${CMAKE_SOURCE_DIR}/Externals
     ${CMAKE_SOURCE_DIR}/Externals/luabind
 )

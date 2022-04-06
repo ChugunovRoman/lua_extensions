@@ -86,8 +86,3 @@ int open_table(lua_State *L)
     luaL_openlib(L, LUA_TABLIBNAME, tab_funcs, 0);
     return 0;
 }
-
-void open_additional_libs(lua_State *L)
-{
-    open_table(L);
-}
