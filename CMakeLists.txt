@@ -11,6 +11,8 @@ set(SRC_FILES
     "src/lua_extensions.cpp"
 )
 
+group_sources(SRC_FILES)
+
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}
 	${LUA_INCLUDE_DIR}
