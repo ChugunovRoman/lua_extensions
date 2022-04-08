@@ -2,6 +2,7 @@ project(lua_extensions)
 
 set(SRC_FILES
     "src/common.h"
+    "src/common.cpp"
     "src/lua_extend_string.h"
     "src/lua_extend_string.cpp"
     "src/lua_extend_table.h"

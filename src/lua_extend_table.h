@@ -1,10 +1,3 @@
-#ifdef __cplusplus
-extern "C"
-{
-#endif
+#include "common.h"
 
-  LUALIB_API int open_table(lua_State *L);
-
-#ifdef __cplusplus
-}
-#endif
+LUALIB_API int open_table(lua_State *L);
