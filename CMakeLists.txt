@@ -21,7 +21,7 @@ include_directories(
     ${CMAKE_SOURCE_DIR}/Externals/luabind
 )
 
-add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
+add_library(${PROJECT_NAME} SHARED ${SRC_FILES})
 
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
