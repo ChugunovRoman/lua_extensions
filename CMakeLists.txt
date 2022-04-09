@@ -21,7 +21,7 @@ include_directories(
     ${CMAKE_SOURCE_DIR}/Externals/luabind
 )
 
-add_library(${PROJECT_NAME} SHARED ${SRC_FILES})
+add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
 
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
@@ -32,6 +32,7 @@ target_link_libraries(${PROJECT_NAME}
 
 target_compile_definitions(${PROJECT_NAME}
     PRIVATE
+    $<$<BOOL:${CMAKE_COMPILER_IS_GNUCXX}>:-fPIC>
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
