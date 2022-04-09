@@ -30,15 +30,11 @@ target_link_libraries(${PROJECT_NAME}
     ${LUA_LIBRARIES}
 )
 
-target_compile_options(${PROJECT_NAME}
-	PRIVATE
-	-fPIC
-)
-
 target_compile_definitions(${PROJECT_NAME}
     PRIVATE
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
     PREFIX ""
+    POSITION_INDEPENDENT_CODE ON
 )
