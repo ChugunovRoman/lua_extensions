@@ -30,6 +30,11 @@ target_link_libraries(${PROJECT_NAME}
     ${LUA_LIBRARIES}
 )
 
+target_compile_options(${PROJECT_NAME}
+	PRIVATE
+	-fPIC
+)
+
 target_compile_definitions(${PROJECT_NAME}
     PRIVATE
 )
