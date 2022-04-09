@@ -32,7 +32,6 @@ target_link_libraries(${PROJECT_NAME}
 
 target_compile_definitions(${PROJECT_NAME}
     PRIVATE
-    $<$<BOOL:${CMAKE_COMPILER_IS_GNUCXX}>:-fPIC>
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
